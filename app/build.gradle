@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.hyperion.notificationbandit'
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId 'com.hyperion.notificationbandit'
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 8
+        versionName '1.1.6'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}

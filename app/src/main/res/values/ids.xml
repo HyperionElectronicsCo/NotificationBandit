@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="status_text" />
+    <item type="id" name="start_button" />
+    <item type="id" name="reset_button" />
+    <item type="id" name="compact_status" />
+    <item type="id" name="compact_bet_button" />
+    <item type="id" name="compact_lever_button" />
+    <item type="id" name="jackpot_text" />
+    <item type="id" name="final_reel_one" />
+    <item type="id" name="spin_reel_one" />
+    <item type="id" name="final_reel_two" />
+    <item type="id" name="spin_reel_two" />
+    <item type="id" name="final_reel_three" />
+    <item type="id" name="spin_reel_three" />
+    <item type="id" name="lever_button" />
+    <item type="id" name="bet_one_button" />
+    <item type="id" name="bet_two_button" />
+    <item type="id" name="bet_five_button" />
+    <item type="id" name="bet_ten_button" />
+    <item type="id" name="result_text" />
+    <item type="id" name="credits_text" />
+</resources>

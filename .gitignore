@@ -1,0 +1,34 @@
+# Gradle and Android build output
+.gradle/
+build/
+**/build/
+
+# Local IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Local Android SDK configuration
+local.properties
+
+# AIDE/NextIDE output and logs
+*.log
+*.txt~
+bin/
+gen/
+
+# Generated packages
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Signing material must remain private
+*.jks
+*.keystore
+
+# Operating-system files
+.DS_Store
+Thumbs.db

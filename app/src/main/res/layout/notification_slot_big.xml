@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:background="@drawable/machine_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/marquee_background">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NOTIFICATION BANDIT"
+            android:textStyle="bold"
+            android:textColor="#FFD54F"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@id/jackpot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAX 50"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/reel_bank_background">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/reel_frame">
+
+                <ImageView
+                    android:id="@id/final_reel_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/symbol_cherry"
+                    android:contentDescription="First reel" />
+
+                <ImageView
+                    android:id="@id/spin_reel_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reel_spin_00"
+                    android:visibility="gone"
+                    android:contentDescription="First reel spinning" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/reel_frame">
+
+                <ImageView
+                    android:id="@id/final_reel_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/symbol_lemon"
+                    android:contentDescription="Second reel" />
+
+                <ImageView
+                    android:id="@id/spin_reel_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reel_spin_03"
+                    android:visibility="gone"
+                    android:contentDescription="Second reel spinning" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/reel_frame">
+
+                <ImageView
+                    android:id="@id/final_reel_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/symbol_seven"
+                    android:contentDescription="Third reel" />
+
+                <ImageView
+                    android:id="@id/spin_reel_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reel_spin_06"
+                    android:visibility="gone"
+                    android:contentDescription="Third reel spinning" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@id/lever_button"
+            android:layout_width="54dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lever_up"
+            android:background="@drawable/lever_touch_background"
+            android:contentDescription="Pull lever to spin" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="READY - PULL THE LEVER"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/notification_panel_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@id/credits_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:includeFontPadding="false"
+            android:lines="2"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="CREDITS\n100"
+            android:textStyle="bold"
+            android:textColor="#FFD54F"
+            android:textSize="10sp"
+            android:background="@drawable/notification_panel_background" />
+
+        <Button
+            android:id="@id/bet_one_button"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="3dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="● 1"
+            android:textStyle="bold"
+            android:textColor="#FFD54F"
+            android:textSize="10sp"
+            android:background="@drawable/bet_button" />
+
+        <Button
+            android:id="@id/bet_two_button"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="2dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="2"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:background="@drawable/bet_button" />
+
+        <Button
+            android:id="@id/bet_five_button"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="2dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="5"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:background="@drawable/bet_button" />
+
+        <Button
+            android:id="@id/bet_ten_button"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="2dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="10"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:background="@drawable/bet_button" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RESULT ABOVE • BET 1 / 2 / 5 / 10 • PULL LEVER"
+        android:textColor="#BBBBBB"
+        android:textSize="9sp"
+        android:singleLine="true" />
+</LinearLayout>

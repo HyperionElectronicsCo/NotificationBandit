@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notification Bandit</string>
+    <string name="notification_channel_name">One-Arm Bandit</string>
+    <string name="notification_channel_description">Keeps the playable slot machine in your notification shade.</string>
+</resources>
