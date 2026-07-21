@@ -1,7 +1,7 @@
 # Notification Bandit
 
 <p align="center">
-  <img src="docs/notification-bandit-preview.jpg" alt="Notification Bandit running inside an expanded Android notification" width="720">
+  <img src="docs/notification-bandit-preview.png" alt="Notification Bandit running inside an expanded Android notification" width="720">
 </p>
 
 **Notification Bandit** is a miniature one-arm bandit that lives inside a persistent Android notification. Expand the notification, select a bet, and pull the red lever without opening a full-screen game.
